@@ -1,0 +1,568 @@
+@charset "utf-8";
+
+/*
+Theme Name: fserc201605
+discription: twentysixteenの子テーマ fserc 用
+Author: makita
+Template: twentysixteen
+Version: 0.10
+*/
+
+
+/* =Basic structure
+-------------------------------------------------------------- */
+
+
+
+.site-branding .site-title a {
+	color: #008A45;   /* Blog Title Color  green*/
+}
+.site-description  {
+	color: #07A2BC;   /* Blog sub-Title Color blue*/
+	font-weight: bold;
+}
+
+
+
+.entry-title {
+  font-size: 1.4rem;
+  font-weight: 400;                   /* 少し軽くする。元は700 */
+  padding-top: 1rem;
+}
+
+.site-header-menu {
+	font-size: 0.8rem;
+	/* background: #E6FFCC;  */   /* 薄い緑 */
+	/* background: #FFFFCC;  */   /* Background Color =  Yellow  FFFFCC */
+	background-image: linear-gradient(45deg, #E6FFCC, #CCE6FF);  /* グラデュエーション 左が緑色、右が水色 */
+	/* background-image: linear-gradient(45deg, #CCE6FF, #E6FFCC); */  /* グラデュエーション 左が水色、右が緑色 */
+	border-bottom: 1px solid #9BB3a7;
+	border-top: 1px solid #9BB3a7;
+	color: ##6A6A6A;
+}
+
+.menu-toggle,
+.menu-toggle:hover,
+.menu-toggle:focus {
+	background-image: linear-gradient(45deg, #E6FFCC, #CCE6FF);  /* <-- グラデュエーション */
+}
+
+
+
+
+.site-header,
+.site-content {
+ 	padding: 0 2.5641%;  /* <-- 5.25em 4.5455%  サイトタイトルの上下と左右を狭める */
+}
+
+.site-main, 
+.sidebar {
+	margin-bottom: 1.0em;   /* <-- 3.5em */
+}
+
+
+.site-footer {
+ 	padding: 0 2.5641% 1.00em;  /* <-- 0 7.6923% 1.75em; */
+ 	background: #CCE6FF; /* Background Color = blue */
+}
+
+.site {
+	background: #CCE6FF; /* Background Color = blue  <-- #FFF*/
+}
+.site-inner {
+	background: #FFF; 
+}
+
+
+
+
+a {
+	color: #006600;   /*006666    008A45 to 2013-08-20  original #21759b */
+}
+
+.entry-header .entry-title a {
+	color: #006600;   /*  original #757575 */
+}
+.widget-area .widget a {
+	color: #333333  /* 20130820*/
+}
+
+
+a:visited {
+	color: #009933;   /* 20130820-20160630 #008A45*/
+}
+.entry-content a:visited ,
+.comment-content a:visited ,
+.entry-header .entry-title a:visited {
+	color: #009933;   /* 20130820-20160630 #008A45*/
+}
+
+.widget-area .widget a:visited {
+	color: #333333  /* 20130820 20160520*/
+}
+
+.widget-area  {
+	background-color: #FFFFE0;    /* 20160607 <-- #FFFECC <-- Background Color =  Yellow  FFFFCC */
+	/* background-image: linear-gradient(#99FFAA, #99AAFF); */
+	/* background-image: linear-gradient(#E6FFCC, #CCE6FF);  */ /* Background Color = blue  #FFFFdd*/
+   	padding: 10px;
+}
+
+
+
+.widget {
+    border-style: none;         /* お葬式みたいな仕切り線を消す。*/
+    /* font-size: 1rem;  */           /* ウィジェット内のフォントが小さ過ぎ */
+    margin-bottom: 0.5rem;      /* ウィジェットどおしの間隔が広過ぎ */
+}
+
+
+a:hover {
+	color: #006600;   /*  20160630まで #CC0000 <-- original #0f3647 */
+}
+
+.entry-content a:hover,
+.comment-content a:hover,
+.site-header h1 a:hover,
+.site-header h2 a:hover,
+.main-navigation a:hover,
+footer[role="contentinfo"] a:hover,
+.comments-link a:hover,
+.entry-meta a:hover,
+.format-status .entry-header header a:hover,
+.comments-area article header a:hover,
+a.comment-edit-link:hover,
+.template-front-page .widget-area .widget li a:hover,
+.widget-area .widget a:hover ,
+.entry-header .entry-title a:hover {
+	color: #006600;   /*  20160630まで #CC0000 <-- original #21759b */
+}
+
+.entry-footer {
+	float: right;   /* makita 20160606 右寄せで表示させる*/
+}
+
+.entry-footer a {
+	color: #686868;
+}
+
+.entry-footer a:hover,
+.entry-footer a:focus {
+	color: #006600;   /*  20160630まで #007acc; */
+}
+
+
+
+.ZenphotoPress_badge .ZenphotoPress_shortcode {
+	margin: 0;
+}
+
+
+
+/* Assistive text */
+.assistive-text,
+.site .screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+body {
+	/* font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif; */
+	text-rendering: optimizeLegibility;
+	color: #222;  /* #444 */
+}
+body.custom-font-enabled {
+	/* font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif; */
+}
+
+
+
+/**********************************************************************
+ *  タイトル-カスタムロゴ  20160526 <-- http://nendeb.com/53 
+ *********************************************************************/
+
+.site-title a {
+	background-image: url("/wp/wp-content/themes/fserc201301/fserclogo.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	display: inline-block;
+	height: 68px;
+	padding-left: 80px;
+	padding-top: 20px;
+}
+
+/**********************************************************************
+ *  フォント指定  <-- http://def-4.com/twentysixteen-jp-font/ 
+ *********************************************************************/
+
+body,
+button,
+input,
+select,
+textarea,
+.required,
+.main-navigation,
+.post-navigation,
+.post-navigation .post-title,
+.pagination,
+.image-navigation,
+.comment-navigation,
+.site .skip-link,
+.widget .widget-title,
+.widget_recent_entries .post-date,
+.tagcloud a,
+.site-title,
+.entry-title,
+.entry-footer,
+.sticky-post,
+.page-title,
+.page-links,
+.comments-title,
+.comment-reply-title,
+.comment-metadata,
+.pingback .edit-link,
+.comment-reply-link,
+.comment-form label,
+.no-comments,
+.widecolumn label,
+.widecolumn .mu_register label{
+        font-family: "游ゴシック" , YuMincho , "メイリオ", Hiragino Mincho ProN ;
+}
+
+
+/**********************************************************************
+ *  背景を削除 20160520 makita 
+ *********************************************************************/
+
+@media screen and (min-width: 44.375em) {
+	.site {
+		margin: 0px;
+	}
+	body:not(.custom-background-image).admin-bar:before {
+		top: 0px;
+	}
+	body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+    height: 0;
+	}
+}
+
+
+
+@media screen and (min-width: 56.875em) {
+
+	.site- {
+		padding: 0 2.5641%;
+	}
+}
+
+/**********************************************************************
+ *  PC画面でもfooterが左側に来ない設定 20160520 makita <-- http://def-4.com/twenty-sixteen-entry-footer/
+ *********************************************************************/
+ 
+@media screen and (min-width: 44.375em) {
+	.entry-header,
+	.post-thumbnail,
+	.entry-content,
+	.entry-summary,
+	.entry-footer,
+	.comments-area,
+	.image-navigation,
+	.post-navigation,
+	.page-header,
+	.page-content,
+	.content-bottom-widgets {
+		margin-right: 0%;  /* <-- 10% */
+	}
+	.site-main > article {
+		margin-bottom: 0;   /* <-- 5.25em */
+	}
+	.site-branding {
+		margin-top: 1.0em;  /* <-- 1.3125em */
+		margin-bottom: 0.5em;  /* <-- 1.3125em */
+	}
+	.site-main,
+	.sidebar,
+	.widecolumn {
+			margin-bottom: 1.0em; /* <-- 5.25em; */
+	}
+
+}
+ 
+@media screen and (min-width: 56.875em) {
+	.entry-content,
+	.entry-footer {
+		margin-right: initial;  /*  <-- 0% <-- 10% */
+	}
+
+	body:not(.search-results) article:not(.type-page) .entry-footer {
+		width: inherit; /* 右寄せにする 20160606 makita  20160608 initial ではダメ <-- 100% */
+		float: right;
+	}
+
+	body.single .site-inner footer.entry-footer {
+		margin-top: 2.1538461538em;  /*  20160727 makita */
+	}
+
+	body:not(.search-results) article:not(.type-page) .entry-footer > span:not(:last-child):after {
+	content: "/";
+	display: inline-block;
+	opacity: 0.7;
+	padding: 0 0.538461538em;
+	}
+ 
+	.single .byline,
+	.full-size-link,
+	body:not(.search-results).group-blog .byline,
+	body:not(.search-results) .entry-format,
+	body:not(.search-results) .cat-links,
+	body:not(.search-results) .tags-links,
+	body:not(.search-results) article:not(.sticky) .posted-on,
+	body:not(.search-results) article:not(.type-page) .comments-link,
+	body:not(.search-results) article:not(.type-page) .entry-footer .edit-link,
+	body:not(.search-results) article:not(.type-page) .entry-footer .avatar {
+		display: inline-block;
+	}
+}
+ 
+@media screen and (min-width: 61.5625em) {
+	body:not(.search-results) article:not(.type-page) .entry-content {
+		width: 100%;   /* <-- 94.8718%; <-- 90% */
+	}
+	.site-main > article {
+		margin-bottom: 0;   /* <-- 7.0em   連続する記事の間の空白をつめる 20160527 makita */
+	}
+	.site-branding,
+	.site-header-menu,
+	.header-image {
+		margin-top: 1.0em;    /* <-- 1.75em; 20160527 makita */
+		margin-bottom: 0.5em;  /* <-- 1.75em; 20160527 makita */
+	}
+	.comments-area,
+	.sidebar,
+	.content-bottom-widgets .widget-area,
+	.widecolumn,
+	.site-main {
+		margin-bottom: 1.0em; /* <--  7.0em; */
+	}
+	
+
+}
+
+
+/**********************************************************************
+ *  ウィジェットを大きく 20160520 makita 
+ *********************************************************************/
+
+@media screen and (min-width: 56.875em) {
+	.sidebar {
+		margin-left: 72%;   /* <-- 75% */
+		width: 28%;  /* <-- 25% */
+	}
+}
+
+/**********************************************************************
+ *  メニュー 20160525/20160609 makita 
+ *********************************************************************/
+
+@media screen and (min-width: 56.875em) {
+	.site-header-menu {
+		width: 100%; /* 全幅表示とする 20160603 makita */
+		/* margin-left: auto; */ /* ブログタイトルの下にきたときに右に寄せる 20160525 makita */
+		/* margin-top: auto;  */ /* 下に寄せる 20160527 makita */
+	}
+	.main-navigation {
+		/* float: right;  */  /* 全幅表示の中で右寄せで表示させる 20160603 makita */
+		padding-left: 80px;   /* 0.5em; */
+	}
+	.main-navigation a {
+		line-height: 1.0; /* <-- 1.3125; 高さを少し狭くする 20160609 makita */
+	}
+	.main-navigation ul ul a {
+		width: 14em; /* <-- 12.6875em  プルダウンメニュー表示を少し広げる 20160609 makita */
+		/* background-image: linear-gradient(45deg, #E6FFCC, #CCE6FF);  */ /* 20160609 makita  */
+		background-color: #EFFFF2;  /* 20160609 makita temporary */
+		padding: 0.4em 0.875em;  /* 20160610 makita 縦幅を狭く */
+	}
+	.main-navigation ul ul ul a {
+		background-color: rgb(231, 243, 233);
+	}
+	 /* サブメニューを、左側に、ではなく、右側に出す 20160609 makita */
+	.main-navigation li:hover > ul,
+	.main-navigation li.focus > ul {
+		right: auto;  /* <-- 0; */
+		left: 0;      /* <-- auto; */
+	}
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		right: auto;   /* <-- 100%; */
+		left: 100%;       /* <-- auto; */
+	}
+	.main-navigation ul ul:before {
+		left: 4px;  /* <-- right: 9px; プルダウンメニューの△のとんがりを左側へ移動させる */
+		/* right: unset; IE11 未対応 */
+		right: auto;
+	}
+	.main-navigation ul ul:after {
+		left: 6px;   /* <-- right: 11px; */
+		/* right: unset; IE11 未対応 */
+		right: auto;
+		border-color: #EFFFF2 transparent;  /* 20160609 makita temporary */
+	}
+	.main-navigation ul .menu-item-has-children > a:before {
+		font-family: "Genericons";
+		content: "\f431";
+		position: absolute;
+		left: 0.625em;
+		top: 0.8125em;
+	}
+	.main-navigation ul .menu-item-has-children > a:after {
+		/* all: unset;    20160610 IE11 未対応 */
+		content: "";
+	}
+	.main-navigation ul ul .menu-item-has-children > a {
+		padding-left:0.875em;
+		padding-right:0.875em;
+	}
+	.main-navigation .menu-item-has-children > a {
+		padding-left: 1.75em;
+		padding-right: 0.5em;
+	}
+	.main-navigation ul ul .menu-item-has-children > a:before {
+		left: auto;
+		right: 0.625em;
+		top: 0.625em;
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(27deg);
+		-ms-transform: rotate(270deg);
+		transform: rotate(270deg);  /* <-- 90deg   左むきを右向きにする*/
+	}
+}
+
+
+/**********************************************************************
+ *  余白を小さく 20160520 makita 
+ *********************************************************************/
+
+.site-main > article {
+	margin-bottom: 0.5em;   /* <-- 3.5em */
+}
+
+body:not(.single)  .site-main > article {
+	border-bottom: 1px solid #686868;     /* 20160603 makita 線を加える  20160606 シングルの表示では線を入れない 20160608 全幅とする*/
+}
+
+
+.entry-header,
+.entry-summary,
+.entry-content,
+.entry-footer,
+.page-content {
+	margin-right: 0%;    /* <-- 2.5641% <--  7.6923%; */
+	margin-left:  0%;    /* <--  7.6923%; */
+}
+
+
+/**********************************************************************
+ *  一覧ページの余白を小さく 20160603 makita 
+ *********************************************************************/
+
+.page-header {
+	border-top: 1px solid #1a1a1a;  /* <--  4px  */
+	margin: 0 0 1.0em ;     /* <--  0 7.6923% 3.5em;  */
+	padding-top: 0.5em;   /* <--  1.75em; */
+}
+
+
+.pagination {
+	border-top: 0px solid #1a1a1a;  /* <--  4px solid #1a1a1a;   */
+}
+
+
+
+/**********************************************************************
+ *  投稿単位のページナビゲーション
+ *********************************************************************/
+.post-navigation,
+.post-navigation .post-title,
+.post-navigation div + div {
+  border-width: 1px;     /* 線を細く */
+  font-size: 0.8rem;      /* 前や次が小さいのでまとめて同じ大きさに */
+  font-weight: 400;
+}
+
+div.nav-next {
+  text-align: right;                      /* 「次」は右寄せ */
+}
+
+.post-navigation a,
+.post-navigation .meta-nav {
+  padding: 0.2em 0;                          /* 行間をつぶして狭く */
+  line-height: 1;
+  margin: 0rem;
+}
+
+/* table 20160616 makita */
+
+th,
+td {
+	padding: 0 0.4375em;   /* <-- 0.4375em; */
+}
+
+
+
+/* Sidebar */
+
+.widget-area .widget .tabbertab .textwidget, .widget-area .widget .tabbertab .ec3_events li{
+	line-height: 1.6; /* タブの中の改行高さを狭く */
+	color: inherit; /* 文字色を赤にしない */
+	list-style: none;
+}
+
+.widget-area div.listing-item, .widget-area li.ec3_list.ec3_list_day ul li{
+	margin-bottom: 0.5rem; /* タブの中のアイテム間の改行高さの設定 */
+}
+.widget-area ul.ec3_events {
+	margin-left: 0; /* 左側の余白の設定 */
+}
+.widget-area li.ec3_list.ec3_list_day a{
+	box-shadow: 0 1px 0 0 currentColor;
+}
+.widget-area li.ec3_list li{
+	margin-left: -15px;  /* <-- -12px; */
+}
+
+/* = for plugin tabber-tabs-widget   20160615 makita
+-------------------------------------------------------------- */
+
+
+.widget-area .style2 ul.tabbernav li.tabberactive a {
+	 background-color: #FFFFE0;  /* クリーム色 */
+	border-bottom: 1px solid #FFFFE0;  /* クリーム色 */
+}
+
+.widget-area .style2  ul.tabbernav li a {
+	padding: 3px 0.5em 0px 0.5em;
+	border-bottom: 0;  /* アクティブなタブは下線を削除 */
+}
+
+.widget-area .style2.tabberlive .tabbertab {
+	border: 1px solid #AAAAAA;  /* 上部の線も入れる */
+	margin-top: -1px;  /* 上部の隙間をツメる */
+}
+
+.widget-area .style2 ul.tabbernav {
+	padding: 3px 0 0 0;;  /* 下部の隙間をツメる */
+}
+
+/* = for plugin zenphoto-gallery   20160622 makita
+-------------------------------------------------------------- */
+
+div.zpg_gallery_div table.zpg_gallery_table td {   /* 画像が中央揃えにする 20160622 makita*/
+	display: inline-block;
+}
+
+div.zpg_gallery_div table.zpg_gallery_table tbody {   /* 画像が中央揃えにする 20160622 makita*/
+	display: inline-block;
+}
